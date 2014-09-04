@@ -1,23 +1,21 @@
 source 'https://rubygems.org'
- ruby '2.0.0'
-#By default, Heroku will inject plugins in Rails 3.x applications to ensure applications get the most out of the Heroku platform. The two plugins that may
-# be injected are documented below. To avoid this injection in Rails 3, include the rails_12factor gem in your application. In your Gemfile:
-gem 'rails_12factor'
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
-# Use pg as the database for Active Record
-gem 'pg'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
-
-# Use jquery as the JavaScript library
+gem 'rails', '3.2.3'
+group :development do
+gem 'sqlite3', '1.3.5'
+end
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+gem 'sass-rails', '3.2.4'
+gem 'coffee-rails', '3.2.2'
+gem 'uglifier', '1.2.3'
+end
 gem 'jquery-rails'
+group :production do
+gem 'pg', '0.12.2'
+end
+# Use jquery as the JavaScript library
+#gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -29,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-#egem 'unicorn'
+# gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
