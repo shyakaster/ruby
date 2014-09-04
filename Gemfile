@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
  ruby '2.0.0'
- gem 'thin'
 #By default, Heroku will inject plugins in Rails 3.x applications to ensure applications get the most out of the Heroku platform. The two plugins that may
 # be injected are documented below. To avoid this injection in Rails 3, include the rails_12factor gem in your application. In your Gemfile:
 gem 'rails_12factor'
