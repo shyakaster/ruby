@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
-
-
+#By default, Heroku will inject plugins in Rails 3.x applications to ensure applications get the most out of the Heroku platform. The two plugins that may
+# be injected are documented below. To avoid this injection in Rails 3, include the rails_12factor gem in your application. In your Gemfile:
+gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 # Use pg as the database for Active Record
